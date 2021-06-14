@@ -6,7 +6,7 @@
 
 .header-text {
     text-align: center;
-    padding-top: 20vh;
+    padding-top: 10vh;
 }
 
 .header-text > h1 {
@@ -30,6 +30,7 @@
     padding-top: 5vh;
     padding-left: 15vw;
     padding-right: 15vw;
+    padding-bottom: 10vh;
     justify-content: center;
 }
 

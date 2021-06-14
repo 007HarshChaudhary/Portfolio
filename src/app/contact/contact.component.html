@@ -1,25 +1,14 @@
 <div class="container-fluid">
     <div class="header-text">
         <h1>CONTACT</h1>
-    </div>
 
-    <div class="social-icons-container">
-        <a class="social-icon" href="https://github.com/007HarshChaudhary" target="_blank">
-            <img src="assets/github.png" alt="github" width="100">
-        </a>
-        <a class="social-icon" href="https://www.youtube.com/channel/UCd1rWoJN3v9rONdgVNQmwnQ" target="_blank">
-            <img src="assets/yt_icon.png" alt="Youtube" width="120">
-        </a>
-        <a class="social-icon" href="https://www.linkedin.com/in/harshachaudhary007/" target="_blank">
-            <img src="assets/linkedin.png" alt="linkedIn" width="100">
-        </a>
-        <a class="social-icon" href="https://www.instagram.com/its._.me_harsh/" target="_blank">
-            <img src="assets/insta.png" alt="Instagram" width="100">
-        </a>
-
-        <a class="social-icon" href="https://www.facebook.com/001harsh" target="_blank">
-            <img src="assets/fb_icon.png" alt="facebook" width="120">
-        </a>
-    
+    <div class="social-links">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0 2vw 2vh 2vw;" *ngFor = "let skill of socialLinks">
+                <a href={{skill.ref}} target="_blank">
+                    <img src={{skill.src}} alt={{skill.alt}} width="100" style="margin-bottom: 2vh">    
+                </a>
+            </div>
+        </div>
     </div>
 </div>
