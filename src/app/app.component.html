@@ -1,0 +1,31 @@
+<mat-drawer-container class="example-container" autosize>
+  
+  <mat-drawer #drawer class="sidenav" mode="over">
+    <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'home')">
+      Home
+    </a>
+    <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'about')">
+      About me
+    </a>
+    <a mat-button disabled class="menuItem" (click)="navigateToComponent(drawer, 'projects')">
+      Projects
+    </a>
+    <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'skills')">
+      Skills
+    </a>
+    <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'contact')">
+      Contact
+    </a>
+  </mat-drawer>
+
+  <div>
+    <button (click)="drawer.toggle()" mat-icon-button style="position: absolute; top: 5px; left: 5px; color:white;">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <router-outlet></router-outlet>
+    <a mat-icon-button style="position: fixed; bottom: 10px; right: 15px; color:white;" routerLink="/home">
+      <mat-icon>home</mat-icon>
+    </a>
+  </div>
+
+</mat-drawer-container>

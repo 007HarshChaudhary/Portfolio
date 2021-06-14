@@ -1,0 +1,57 @@
+<div class="container" style="background-color: #111;">
+
+  <div class="header-text">
+    <h1 style="font-weight: 900; font-size: 2.6em;">ABOUT ME</h1>
+    <p style="font-weight: 300; font-size: 20px">A Software Developer | Youtuber</p>
+    <p style="font-size: 20px; margin: 25px 25px;">I like to code and play video games</p>
+    <p style="font-weight: 900; font-size: 20px; margin-top: 10px;">Timeline</p>
+    <a (click)="tl.scrollIntoView({behavior:'smooth'})" style="cursor: pointer;"><mat-icon style="transform: rotate(90deg);">arrow_forward_ios</mat-icon></a>
+  </div>
+
+  <div class="containers">
+    <div class="timeline">
+      <ul>
+        <li>
+          <div class="timeline-content">
+            <h1>Digital Specialist Engineer</h1>
+            <i class="date">Nov 2020-Present</i>
+            <a #tl style="position: absolute; top: -40px"></a>
+            <p style="font-weight: 500; margin-bottom: 10px">INFOSYS</p>
+            <p>Contributing indevelopement of automation solutions for different service-lines in central automation
+              unit
+              of the organisation.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <h1>Graduation</h1>
+            <i class="date">2016-2020</i>
+            <p style="font-weight: 500; margin-bottom: 10px">CGPA: 8.5</p>
+            <p>B.tech in Computer Science and Engineering from Dr. APJ Abdul Kalam Technical University, Lucknow.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <h1>Sr. Secondary School</h1>
+            <i class="date">2015</i>
+            <p style="font-weight: 500; margin-bottom: 10px">Score: 90%</p>
+            <p>Central Board of Secondary Education</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-content">
+            <h1>Secondary School</h1>
+            <i class="date">2013</i>
+            <p style="font-weight: 500; margin-bottom: 10px">CGPA: 9.0</p>
+            <p>Central Board of Secondary Education</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+</div>

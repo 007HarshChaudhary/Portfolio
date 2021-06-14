@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="header-text">
+        <h1>SKILLS</h1>
+        <p>Here is the stack of technology I've worked on</p>
+    </div>
+
+    <div class="skills">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" style="padding: 0 2vw 2vh 2vw;" *ngFor = "let skill of skillList">
+                <img src={{skill.path}} alt="logo" width="100px" style="margin-bottom: 2vh">
+                <h5>{{skill.name}}</h5>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+.home-component {
+    padding-top: 25vh;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(39.97deg,#ff727280 .79%,#ff833b83 79.29%);
+
+}
+
+.header-text {
+    text-align: center;
+    font-family: Poppins;
+    color: rgba(54, 54, 54, 0.966)
+}
+
+.header-text > h1 {
+    font-size: 2.9em;
+    font-weight: 900;
+}
+
+.header-text > p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.buttons {
+    padding-top: 5vh;
+    text-align: center;
+}
+
+.buttons > .btn {
+    margin: 10px; 
+    width: 15vw; 
+    min-width: 200px; 
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.btn:hover {
+    color: #ff727280;
+}

@@ -1,0 +1,35 @@
+.container-fluid {
+    min-height: 100vh;
+    /* background: linear-gradient(40.97deg,#79005a .79%,#a03bff83 79.29%); */
+    background: #111;
+}
+
+.header-text {
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.header-text > h1 {
+    font-weight: 900;
+    color: white;
+    font-size: 2.9em;
+}
+
+.header-text > p {
+    font-weight: 500;
+    color: white;
+    font-size: 1.4em;
+}
+
+.skills {
+    text-align: center;
+}
+
+.row {
+    color: white;
+    padding-top: 5vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    justify-content: center;
+}
+
