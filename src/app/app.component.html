@@ -7,9 +7,9 @@
     <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'about')">
       About me
     </a>
-    <!-- <a mat-button disabled class="menuItem" (click)="navigateToComponent(drawer, 'projects')">
+    <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'projects')">
       Projects
-    </a> -->
+    </a>
     <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'skills')">
       Skills
     </a>
@@ -23,7 +23,7 @@
     <button (click)="drawer.toggle()" mat-icon-button style="position: fixed; top: 5px; left: 5px; color:white;">
       <mat-icon style="font-size: 35px">menu</mat-icon>
     </button>
-    <a mat-icon-button style="position: fixed; bottom: 10px; right: 15px; color:white;" routerLink="/home">
+    <a mat-icon-button style="position: fixed; bottom: 10px; right: 20px; color:white;" routerLink="/home">
       <mat-icon style="font-size: 35px">home</mat-icon>
     </a>
   </div>

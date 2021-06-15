@@ -1,1 +1,17 @@
-<p>projects works!</p>
+<div class="container-fluid">
+    <div class="header-text">
+        <h1>MY PROJECTS</h1>
+        <p>Here are my projects, have a look!</p>
+    </div>
+
+    <div class="project-cards-container">
+        <mat-card class="project-card" style="font-family: Poppins" *ngFor="let project of projects">
+            <img mat-card-image src={{project.imagePath}} alt="">
+            <mat-card-content>
+                <mat-card-title style="font-weight: 700;">{{project.name}}</mat-card-title>
+                <mat-card-subtitle style="color: white;">{{project.technology}}</mat-card-subtitle>
+                <p style="font-size: 16px; display: block;">{{project.description}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
