@@ -23,13 +23,13 @@
 
   <div>
     <router-outlet></router-outlet>
-    <button (click)="drawer.toggle()" mat-icon-button style="position: fixed; top: 5px; left: 5px; color:white;" #tooltip="matTooltip" matTooltip="Menu">
+    <button (click)="drawer.toggle()" mat-icon-button style="position: fixed; top: 5px; left: 5px; color:white;" #tooltipMenu="matTooltip" matTooltip="Menu">
       <mat-icon style="font-size: 35px">menu</mat-icon>
     </button>
-    <a mat-icon-button style="position: fixed; top: 5px; right: 18px; color:white;" routerLink="/home" #tooltip="matTooltip" matTooltip="Go to home">
+    <a mat-icon-button style="position: fixed; top: 5px; right: 18px; color:white;" routerLink="/home"  #tooltipHome="matTooltip" matTooltip="Go to home">
       <mat-icon style="font-size: 35px">home</mat-icon>
     </a>
-    <a mat-icon-button style="position: fixed; bottom: 15px; left: 5px; color:white;" (click)="downloadPDF()" #tooltip="matTooltip" matTooltip="Download resume">
+    <a mat-icon-button style="position: fixed; bottom: 15px; left: 5px; color:white;" (click)="downloadPDF()" #tooltipResume="matTooltip" matTooltip="Download resume">
       <mat-icon style="font-size: 35px">cloud_download</mat-icon>
     </a>
   </div>

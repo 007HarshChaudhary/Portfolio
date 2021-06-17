@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { TooltipComponent } from '@angular/material/tooltip';
+import { Component, ViewChild } from '@angular/core';
+import { MatTooltip } from '@angular/material/tooltip';
 import { Router } from '@angular/router';
 
 declare var require: any
@@ -14,10 +14,15 @@ export class AppComponent {
 
   
   title = 'portfolio';
+  @ViewChild('tooltipMenu', {static: true}) menu: MatTooltip;
+  @ViewChild('tooltipHome', {static: true}) home: MatTooltip;
+  @ViewChild('tooltipResume', {static: true}) resume: MatTooltip;
 
   ngOnInit() {
-    // document.getElementById('tooltip').show();
-
+    this.menu.show();
+    this.home.show();
+    this.resume.show();
+    setTimeout(()=>{ this.menu.hide(); this.home.hide(); this.resume.hide(); }, 3000);
   }
 
   constructor (private router: Router) {
