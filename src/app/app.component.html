@@ -16,15 +16,21 @@
     <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'contact')">
       Contact
     </a>
+    <a mat-button class="menuItem" (click)="downloadPDF()">
+      Resume
+    </a>
   </mat-drawer>
 
   <div>
     <router-outlet></router-outlet>
-    <button (click)="drawer.toggle()" mat-icon-button style="position: fixed; top: 5px; left: 5px; color:white;">
+    <button (click)="drawer.toggle()" mat-icon-button style="position: fixed; top: 5px; left: 5px; color:white;" #tooltip="matTooltip" matTooltip="Menu">
       <mat-icon style="font-size: 35px">menu</mat-icon>
     </button>
-    <a mat-icon-button style="position: fixed; bottom: 10px; right: 20px; color:white;" routerLink="/home">
+    <a mat-icon-button style="position: fixed; top: 5px; right: 18px; color:white;" routerLink="/home" #tooltip="matTooltip" matTooltip="Go to home">
       <mat-icon style="font-size: 35px">home</mat-icon>
+    </a>
+    <a mat-icon-button style="position: fixed; bottom: 15px; left: 5px; color:white;" (click)="downloadPDF()" #tooltip="matTooltip" matTooltip="Download resume">
+      <mat-icon style="font-size: 35px">cloud_download</mat-icon>
     </a>
   </div>
 
