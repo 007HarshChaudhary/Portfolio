@@ -5,7 +5,7 @@
 }
 
 .header-text {
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -22,27 +22,14 @@
 
 .project-card {
     margin: 20px;
-    width: 500px;
-    background-color: #3f4044;
-    color: white;
+    width: 400px;
+    background-color: white;
+    color: rgb(68, 68, 68);
+    transition: all 0.3s ease;
 }
 
-
-/* .project-card {
-    width: 500px;
-    min-height: 550px;
-    background: rgb(44, 44, 44);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin: 20px
+.project-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
-.image-container {
-    width: 100%;
-}
-.project-image {
-    display: block;
-    max-height: 100%;
-    max-width: 100%;
-} */

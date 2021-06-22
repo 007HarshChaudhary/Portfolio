@@ -48,7 +48,6 @@
   margin-bottom: 20px;
 }
 
-
 .timeline ul li:last-child {
   margin-bottom: 0;
 }
@@ -121,6 +120,6 @@
     top: -20px;
   }
   .timeline ul li:hover::before {
-    background-color: aliceblue;
+    background-color: rgb(123, 193, 255);
   }
 }
