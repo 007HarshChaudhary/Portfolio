@@ -6,7 +6,7 @@
 
     <div class="project-cards-container">
         <mat-card class="project-card" style="font-family: Poppins" *ngFor="let project of projects">
-            <img mat-card-image src={{project.imagePath}} alt="">
+            <img mat-card-image src={{project.imagePath}} alt="" style="padding: 15px;">
             <mat-card-content>
                 <mat-card-title style="font-weight: 700;">{{project.name}}</mat-card-title>
                 <mat-card-subtitle style="color: #111;">{{project.technology}}</mat-card-subtitle>

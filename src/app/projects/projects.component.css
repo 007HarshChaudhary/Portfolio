@@ -1,12 +1,13 @@
 .container-fluid {
     background: #111;
     min-height: 100vh;
-    padding: 40px;
+    padding: 0 40px 40px 40px;
 }
 
 .header-text {
     color: rgb(255, 255, 255);
     text-align: center;
+    padding-top: 10vh;
 }
 
 .header-text > h1 {
@@ -22,14 +23,15 @@
 
 .project-card {
     margin: 20px;
-    width: 400px;
+    width: 300px;
     background-color: white;
-    color: rgb(68, 68, 68);
-    transition: all 0.3s ease;
+    color: rgb(66, 66, 66);
+    transition: all 0.2s ease;
 }
 
 .project-card:hover {
     transform: scale(1.05);
     transition: all 0.3s ease;
+    color: #111;
 }
 

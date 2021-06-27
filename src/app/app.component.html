@@ -1,19 +1,19 @@
 <mat-drawer-container class="example-container" autosize>
   
   <mat-drawer #drawer class="sidenav" mode="over">
-    <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'home')">
+    <a mat-button id='home' class="menuItem" (click)="navigateToComponent(drawer, 'home')">
       Home
     </a>
-    <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'about')">
+    <a mat-button id='about' class="menuItem" (click)="navigateToComponent(drawer, 'about')">
       About me
     </a>
-    <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'projects')">
+    <a mat-button id='projects' class="menuItem" (click)="navigateToComponent(drawer, 'projects')">
       Projects
     </a>
-    <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'skills')">
+    <a mat-button id='skills' class="menuItem" (click)="navigateToComponent(drawer, 'skills')">
       Skills
     </a>
-    <a mat-button class="menuItem" (click)="navigateToComponent(drawer, 'contact')">
+    <a mat-button id='contact' class="menuItem" (click)="navigateToComponent(drawer, 'contact')">
       Contact
     </a>
     <a mat-button class="menuItem" (click)="downloadPDF()">
@@ -22,7 +22,9 @@
   </mat-drawer>
 
   <div>
-    <router-outlet></router-outlet>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
     <button (click)="drawer.toggle()" mat-icon-button style="position: fixed; top: 5px; left: 5px; color:white;" #tooltipMenu="matTooltip" matTooltip="Menu">
       <mat-icon style="font-size: 35px">menu</mat-icon>
     </button>
